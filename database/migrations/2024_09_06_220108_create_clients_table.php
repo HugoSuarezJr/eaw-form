@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('address');
-            $table->string('heat_system');
+            $table->string('heating_system');
             $table->timestamps();
         });
     }

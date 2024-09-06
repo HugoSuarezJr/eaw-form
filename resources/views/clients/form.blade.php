@@ -14,6 +14,7 @@
                         <p class="mt-1 text-sm leading-6 text-gray-600">This information will be for EAW only.</p>
 
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            {{-- First name --}}
                             <div class="sm:col-span-3">
                                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First
                                     name</label>
@@ -23,6 +24,7 @@
                                 </div>
                             </div>
 
+                            {{-- Last name --}}
                             <div class="sm:col-span-3">
                                 <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last
                                     name</label>
@@ -32,6 +34,7 @@
                                 </div>
                             </div>
 
+                            {{-- Address --}}
                             <div class="sm:col-span-4">
                                 <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email
                                     address</label>
@@ -98,17 +101,20 @@
 
                     <div class="border-b border-gray-900/10 pb-12">
                         <h2 class="text-base font-semibold leading-7 text-gray-900">Heating System</h2>
-                        <p class="mt-1 text-sm leading-6 text-gray-600">The emc20/20 energy management system software helps you eliminate energy inefficiencies and develop a sustainable plan for your future energy needs with the goal toward increasing your ROI.</p>
-                        <div class="sm:col-span-3">
-                            <label for="country"
-                                class="block text-sm font-medium leading-6 text-gray-900">Country</label>
-                            <div class="mt-2">
-                                <select id="country" name="country" autocomplete="country-name"
-                                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                                    <option>United States</option>
-                                    <option>Canada</option>
-                                    <option>Mexico</option>
-                                </select>
+                        <p class="mt-1 text-sm leading-6 text-gray-600"><span class="font-extrabold">emc</span>20/20 will help buildings lower its energy costs, comply to local laws and provide optimal occupant comfort.</p>
+
+                        {{-- Heating System Type --}}
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <div class="sm:col-span-3">
+                                <label for="heating-system"
+                                    class="block text-sm font-medium leading-6 text-gray-900">Type of Heating System</label>
+                                <div class="mt-2">
+                                    <select id="" name="country" autocomplete="country-name"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                        <option>Steam</option>
+                                        <option>Hot Water</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
