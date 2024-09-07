@@ -6,6 +6,12 @@
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+            @if (session('success'))
+                <div class="bg-emerald-500 py-2 px-4 text-white rounded mb-4">{{ session('success')}}</div>
+            @endif
+
+
             <ul role="list" class="divide-y divide-gray-100">
                 @foreach ($clients as $client)
                     <a href="clients/{{ $client->id }}">

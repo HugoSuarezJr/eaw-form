@@ -21,26 +21,26 @@
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             {{-- First name --}}
                             <div class="sm:col-span-3">
-                                <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First
+                                <label for="first_name" class="block text-sm font-medium leading-6 text-gray-900">First
                                     name</label>
                                 <div class="mt-2">
-                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('first-name')}}">
+                                    <input type="text" name="first_name" id="first_name" autocomplete="given-name"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('first_name')}}">
                                 </div>
-                                @error('first-name')
+                                @error('first_name')
                                     <p class="text-xs text-red-500 font-semibold mt-1">The first name field is required.</p>
                                 @enderror
                             </div>
 
                             {{-- Last name --}}
                             <div class="sm:col-span-3">
-                                <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last
+                                <label for="last_name" class="block text-sm font-medium leading-6 text-gray-900">Last
                                     name</label>
                                 <div class="mt-2">
-                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('last-name')}}">
+                                    <input type="text" name="last_name" id="last_name" autocomplete="family-name"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('last_name')}}">
                                 </div>
-                                @error('last-name')
+                                @error('last_name')
                                     <p class="text-xs text-red-500 font-semibold mt-1">The last name field is required.</p>
                                 @enderror
                             </div>
@@ -73,14 +73,14 @@
                             </div>
 
                             <div class="col-span-full">
-                                <label for="street-address"
+                                <label for="street_address"
                                     class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
                                 <div class="mt-2">
-                                    <input type="text" name="street-address" id="street-address"
-                                        autocomplete="street-address"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('street-address')}}">
+                                    <input type="text" name="street_address" id="street_address"
+                                        autocomplete="street_address"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('street_address')}}">
                                 </div>
-                                @error('street-address')
+                                @error('street_address')
                                     <p class="text-xs text-red-500 font-semibold mt-1">The street address field is required.</p>
                                 @enderror
                             </div>
@@ -110,13 +110,13 @@
                             </div>
 
                             <div class="sm:col-span-2">
-                                <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP
+                                <label for="postal_code" class="block text-sm font-medium leading-6 text-gray-900">ZIP
                                     / Postal code</label>
                                 <div class="mt-2">
-                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('postal-code')}}">
+                                    <input type="text" name="postal_code" id="postal_code" autocomplete="postal_code"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" value="{{ old('postal_code')}}">
                                 </div>
-                                @error('postal-code')
+                                @error('postal_code')
                                     <p class="text-xs text-red-500 font-semibold mt-1">The postal code field is required.</p>
                                 @enderror
                             </div>
@@ -132,12 +132,12 @@
                         {{-- Heating System Type --}}
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div class="sm:col-span-3">
-                                <label for="heating-system"
+                                <label for="heating_system"
                                     class="block text-sm font-medium leading-6 text-gray-900">Type of Heating
                                     System</label>
                                 <div class="mt-2">
-                                    <select id="heating-system" name="heating-system" autocomplete="heating-system"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6" value="{{ old('heating-system')}}">
+                                    <select id="heating_system" name="heating_system" autocomplete="heating_system"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6" value="{{ old('heating_system')}}">
                                         <option>Steam</option>
                                         <option>Hot Water</option>
                                     </select>
