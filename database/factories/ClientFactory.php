@@ -24,7 +24,7 @@ class ClientFactory extends Factory
             'city' => fake('en_US')->city(),
             'region' => fake()->randomElement(['NY', 'FL', 'MA']),
             'postal_code' => fake()->postcode(),
-            'heating_system' => fake()->randomElement(['hot water', 'steam']),
+            'heating_system' => fake()->randomElement(['Hot Water', 'Steam']),
             'created_at' => time()
         ];
     }
