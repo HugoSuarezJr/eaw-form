@@ -13,9 +13,17 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware(['auth', 'verified'])->group(function(){
+    Route::get('/clients', function () {
+        return view('clients.index');
+    })->name('clients');
+
     Route::get('/clients/form', function () {
         return view('clients.form');
-    });
+    })->name('form');
+
+    Route::post('/clients', function () {
+        dd(request()->all());
+    })->name('form');
 });
 
 Route::middleware('auth')->group(function () {

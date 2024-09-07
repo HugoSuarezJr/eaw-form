@@ -5,10 +5,15 @@
         </h2>
     </x-slot>
 
+
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <form>
+            {{-- EAW Form --}}
+            <form method="POST" action="/clients">
+                @csrf {{-- Cross-site Request Forgery for security --}}
                 <div class="space-y-12">
+
+                    {{-- Client Information --}}
                     <div class="border-b border-gray-900/10 pb-12">
                         <h2 class="text-base font-semibold leading-7 text-gray-900">Client Information</h2>
                         <p class="mt-1 text-sm leading-6 text-gray-600">This information will be for EAW only.</p>
@@ -109,7 +114,7 @@
                                 <label for="heating-system"
                                     class="block text-sm font-medium leading-6 text-gray-900">Type of Heating System</label>
                                 <div class="mt-2">
-                                    <select id="" name="country" autocomplete="country-name"
+                                    <select id="heating-system" name="heating-system" autocomplete="heating-system"
                                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
                                         <option>Steam</option>
                                         <option>Hot Water</option>
