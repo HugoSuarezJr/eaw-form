@@ -22,9 +22,19 @@
                 </a>
             </div>
 
+            <div class='mt-4 flex flex-col items-center'>
+                <h1 class='font-bold text-3xl sm:text-4xl md:text-[40px] text-dark'>EAW Form App</h1>
+                <h3 class='text-base mt-4'>Tech Stack: <span class='text-amber-500 font-bold'>PHP/Laravel, MYSQL, TailwindCSS</span> </h3>
+                <p class='text-base'>Github: <a href='https://github.com/HugoSuarezJr/eaw-form' target='_blank' class='hover:underline'>eaw-form</a></p>
+              </div>
+
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
+
+            <div className='mt-2'>
+                <p className='text-base dark:text-gray-400'>*Contact me for access @<a href='https://hugosuarez.com/#contact' target='_blank' className='hover:underline'>hugosuarez.com</a></p>
+              </div>
         </div>
     </body>
 </html>
