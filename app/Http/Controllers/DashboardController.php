@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     /**
-     * Display the specified resource.
+     * Display the Dashboard.
      */
     public function show()
     {

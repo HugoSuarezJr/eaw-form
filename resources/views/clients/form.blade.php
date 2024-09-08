@@ -10,7 +10,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             {{-- EAW Form --}}
             <form method="POST" action="/clients">
-                @csrf {{-- Cross-site Request Forgery for security --}}
+                @csrf {{-- Cross-site Request Forgery protection --}}
                 <div class="space-y-12">
 
                     {{-- Client Information --}}
@@ -148,6 +148,7 @@
                     </div>
                 </div>
 
+                {{-- Cancel or Submit --}}
                 <div class="mt-6 flex items-center justify-end gap-x-6">
                     <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
                     <button type="submit"

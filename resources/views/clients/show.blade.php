@@ -5,8 +5,8 @@
         </h2>
     </x-slot>
 
+    {{-- Client Details Page --}}
     <div class="py-12">
-
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="px-4 sm:px-0">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Client Information</h3>
@@ -35,7 +35,6 @@
                 </dl>
             </div>
         </div>
-
     </div>
 
 </x-app-layout>
