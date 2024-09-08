@@ -23,6 +23,13 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => time()
         ]);
 
+        User::factory()->create([
+            'name' => 'Tony',
+            'email' => 'tony@example.com',
+            'password' => bcrypt('123.321A'),
+            'email_verified_at' => time()
+        ]);
+
         Client::factory()
             ->count(10)
             ->create();
