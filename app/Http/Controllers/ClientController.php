@@ -58,7 +58,7 @@ class ClientController extends Controller
             'heating_system' => request('heating_system'),
         ]);
 
-        return redirect('/clients')->with('success', 'New Client has been added!');
+        return to_route('clients.index')->with('success', 'New Client has been added!');
     }
 
     /**

@@ -14,13 +14,10 @@ Route::get('/', function () {
 
 // Only authorized users can access these routes.
 Route::middleware(['auth', 'verified'])->group(function(){
-
     Route::get('/dashboard', [DashboardController::class, 'show'])
         ->name('dashboard');
 
     Route::resource('clients', ClientController::class);
-
-
 });
 
 Route::middleware('auth')->group(function () {
